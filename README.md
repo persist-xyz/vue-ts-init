@@ -45,8 +45,8 @@ yarn add webpack-dev-server webpack-cli -D
 
 解决：找到 /build/webpack.prod.conf.js ，去掉如下配置
 
-```json
-		new webpack.optimize.CommonsChunkPlugin({
+```javascript
+	new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks (module) {
         // any required modules inside node_modules are extracted to vendor
@@ -55,7 +55,7 @@ yarn add webpack-dev-server webpack-cli -D
           /\.js$/.test(module.resource) &&
           module.resource.indexOf(
             path.join(__dirname, '../node_modules')
-          ) === 0
+          )
         )
       }
     }),
