@@ -1,16 +1,18 @@
 ## vue+typescript+webpack4 项目搭建步骤
 
 
+> 前言：
+因为最近才开始接触Typescript，然后首先就是搭建环境，而网上教程时间比较久而且不全，所以在这里记录下手把手的详细脚印。😂 🎉🎉🎉 
 
-[TOC]
-
+源码地址请戳 👇👇👇 
+[vue-ts-init](https://github.com/persist-xyz/vue-ts-init)
 
 
 ### 1、初始化项目
 
 ```
-vue init webpack my-project
-cd my-project
+vue init webpack vue-ts-init
+cd vue-ts-init
 npm install
 ```
 
